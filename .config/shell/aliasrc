@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# use XINITRC
+[ -f "$XINITRC" ] && alias startx="startx $XINITRC"
+

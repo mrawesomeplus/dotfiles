@@ -1,0 +1,60 @@
+!! Colorscheme
+
+! special
+*.foreground: #f8f8f2
+*.background: #282a36
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #000000
+*.color8: #44475a
+
+! red
+*.color1: #ff5555
+*.color9: #ff5555
+
+! green
+*.color2: #50fa7b
+*.color10: #50fa7b
+
+! yellow
+*.color3: #f1fa8c
+*.color11: #f1fa8c
+
+! blue
+*.color4: #bd93f9
+*.color12: #bd93f9
+
+! magenta
+*.color5: #ff79c6
+*.color13: #ff79c6
+
+! cyan
+*.color6: #8be9fd
+*.color14: #8be9fd
+
+! white
+*.color7: #bbbbbb
+*.color15: #ffffff
+
+!! URxvt Appearance
+URxvt.font: xft:monospace:pixelsize=17
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 4
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+!! URxvt Functions
+URxvt.perl-ext-common: font-size,selection-to-clipboard,pasta
+URxvt.keysym.Shift-Control-C:   perl:keyboard-select:activate
+URxvt.keysym.Shift-Control-V: perl:pasta:paste
+URxvt.keysym.C-j:   perl:font-size:increase
+URxvt.keysym.C-k:   perl:font-sive:decrease

@@ -1,0 +1,1 @@
+/home/kj/Nextcloud/dotfiles/.zshrc
