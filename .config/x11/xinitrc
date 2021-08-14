@@ -1,4 +1,7 @@
+xwallpaper --stretch /home/kj/Pictures/cool.jpg & 
 slstatus &
-uncluttre -idle 3 &
-# xrdb ~/.config/x11/Xresources &
+xcompmgr &
+unclutter --idle 3 & 
+xset s off -dpms &
+# xrdb ~/.config/x11/xresources &
 exec dwm

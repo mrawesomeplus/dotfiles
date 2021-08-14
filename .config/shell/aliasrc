@@ -3,3 +3,22 @@
 # use XINITRC
 [ -f "$XINITRC" ] && alias startx="startx $XINITRC"
 
+# Verbose
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm -vI 
+
+# Add color
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" 
+
+# Shorten commands
+alias \
+	poweroff="sudo poweroff" \
+	reboot=" sudo reboot" \
+    shutdown="sudo shutdown" \
+	v="$EDITOR" \
+    pmm="sudo pmm"

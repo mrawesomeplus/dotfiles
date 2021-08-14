@@ -6,7 +6,7 @@
 *.cursorColor: #afbfbf
 
 ! black
-*.color0: #000000
+*.color0: #44475a
 *.color8: #44475a
 
 ! red
@@ -34,7 +34,7 @@
 *.color14: #8be9fd
 
 ! white
-*.color7: #bbbbbb
+*.color7: #ffffff
 *.color15: #ffffff
 
 !! URxvt Appearance
@@ -53,8 +53,9 @@ URxvt.depth: 24
 URxvt.iso14755: false
 
 !! URxvt Functions
-URxvt.perl-ext-common: font-size,selection-to-clipboard,pasta
-URxvt.keysym.Shift-Control-C:   perl:keyboard-select:activate
-URxvt.keysym.Shift-Control-V: perl:pasta:paste
-URxvt.keysym.C-j:   perl:font-size:increase
-URxvt.keysym.C-k:   perl:font-sive:decrease
+URxvt.keysym.Shift-Control-C: eval:paste_clipboard
+URxvt.keysym.Shift-Control-V: eval:selection_to_clipboard
+urxvt.perl-ext-common: default,resize-font
+URxvt.keysym.C-j:   resize-font:smaller
+URxvt.keysym.C-k:   resize-font:bigger
+URxvt.keysym.C-equal:   resize-font:reset
